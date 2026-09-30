@@ -1,0 +1,270 @@
+{
+  "_readme": "이 파일을 config.json 으로 복사해 수정하세요. 토큰·연락처 같은 비밀값은 여기 적지 말고 secrets/ 폴더나 환경변수에 두세요(secrets_loader.py 참고).",
+  "poll_interval_seconds": 900,
+  "file_date_timezone": "Asia/Seoul",
+  "rss": {
+    "_note": "공개 RSS 만 등록하세요. 원문 페이지는 긁지 않고 피드의 제목·요약·링크만 저장합니다.",
+    "feeds": [
+      {
+        "name": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+      },
+      {
+        "name": "SEC",
+        "url": "https://www.sec.gov/news/pressreleases.rss"
+      },
+      {
+        "name": "한국은행",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000245/news.rss?menuNo=200761"
+      }
+    ],
+    "max_age_hours": 48,
+    "summary_chars": 600,
+    "timeout_seconds": 20,
+    "delay_between_feeds_seconds": 1.0,
+    "user_agent": "news-monitor-rss/1.0"
+  },
+  "telegram": {
+    "enabled": false,
+    "_enabled_note": "기사별 푸시 스위치. 다이제스트만 쓰려면 false.",
+    "bot_token": "",
+    "chat_id": "",
+    "filter": {
+      "keywords": []
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "window_hours": 12,
+    "morning_before_hour": 14,
+    "claude_path": "claude",
+    "claude_oauth_token": "",
+    "_token_note": "`claude setup-token` 으로 발급한 장기 토큰을 secrets/claude_oauth_token.txt 에 두세요.",
+    "timeout_seconds": 600,
+    "max_excerpt_chars": 200,
+    "max_articles": 400
+  },
+  "calendar": {
+    "enabled": true,
+    "_note": "이벤트 캘린더 모듈(evcal/). refresh.py 가 events.db 갱신, digest.py 가 상단에 '오늘·내일 이벤트' 섹션을 코드로 렌더해 주입. 설계: docs/calendar_design.md",
+    "lookahead_days": 14,
+    "lookback_days": 3,
+    "edgar_parse_enabled": true,
+    "edgar_parse_lookback_days": 45,
+    "edgar_parse_items": [
+      "2.02",
+      "7.01",
+      "8.01"
+    ],
+    "refresh_times": [
+      "06:00",
+      "17:00"
+    ],
+    "edgar_user_agent": "",
+    "dart_api_key": "",
+    "dart_api_key_file": "secrets/dart_api_key.txt",
+    "_dart_note": "키 탐색 순서: dart_api_key → 환경변수 DART_API_KEY → dart_api_key_file",
+    "bok_mpc_dates_2026": [],
+    "_bok_note": "한은 금통위 기준금리 결정회의 날짜(YYYY-MM-DD). 확정 일정을 직접 채우세요(bok.or.kr 공지). 비우면 미표기.",
+    "watchlist_us": {
+      "메가캡/플랫폼": [
+        "AAPL",
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META",
+        "ORCL",
+        "ADBE",
+        "CRM"
+      ],
+      "반도체/메모리": [
+        "NVDA",
+        "AVGO",
+        "MU",
+        "SNDK",
+        "MRVL",
+        "CRDO",
+        "SKHY"
+      ],
+      "AI인프라/HW": [
+        "DELL",
+        "HPE",
+        "NTAP",
+        "VRT"
+      ],
+      "광학/테스트/장비": [
+        "CIEN",
+        "LITE",
+        "COHR",
+        "ONTO",
+        "FORM"
+      ],
+      "소프트웨어/보안": [
+        "SNOW",
+        "GTLB",
+        "PANW",
+        "CRWD",
+        "OKTA"
+      ],
+      "핀테크/크립토": [
+        "HOOD",
+        "PYPL",
+        "FISV",
+        "MSTR",
+        "ASST"
+      ],
+      "EV/모빌리티/우주": [
+        "TSLA",
+        "SPCX"
+      ],
+      "에너지": [
+        "XOM",
+        "CVX",
+        "CRK",
+        "FRVO",
+        "FSLR",
+        "TAN"
+      ],
+      "헬스케어": [
+        "LLY",
+        "MRNA"
+      ],
+      "소형/이벤트주": [
+        "NEOV",
+        "GPRO",
+        "UAVS",
+        "FIVE",
+        "DRNZ"
+      ]
+    },
+    "watchlist_kr": {
+      "삼성전자": "005930",
+      "SK하이닉스": "000660",
+      "두산에너빌리티": "034020",
+      "KB금융": "105560",
+      "미래에셋증권": "006800",
+      "인탑스": "049070",
+      "동진쎄미켐": "005290",
+      "한화오션": "042660"
+    },
+    "ticker_tier": {
+      "mega": [
+        "AAPL",
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META",
+        "NVDA",
+        "AVGO",
+        "TSLA",
+        "LLY"
+      ],
+      "large": [
+        "ORCL",
+        "ADBE",
+        "CRM",
+        "MU",
+        "MRVL",
+        "DELL",
+        "HPE",
+        "NTAP",
+        "VRT",
+        "CIEN",
+        "LITE",
+        "COHR",
+        "SNOW",
+        "PANW",
+        "CRWD",
+        "HOOD",
+        "PYPL",
+        "FISV",
+        "MSTR",
+        "XOM",
+        "CVX",
+        "FSLR",
+        "SNDK",
+        "SKHY",
+        "SPCX"
+      ],
+      "mid": [
+        "CRDO",
+        "ONTO",
+        "FORM",
+        "GTLB",
+        "OKTA",
+        "CRK",
+        "MRNA",
+        "ASST",
+        "TAN"
+      ],
+      "small": [
+        "NEOV",
+        "GPRO",
+        "UAVS",
+        "FIVE",
+        "DRNZ",
+        "FRVO"
+      ]
+    },
+    "mcap_factor": {
+      "macro": 1.0,
+      "mega": 1.0,
+      "large": 0.7,
+      "mid": 0.4,
+      "small": 0.2,
+      "sector": 0.8
+    },
+    "_sec_ua_note": "SEC 는 User-Agent 에 연락처(이름 이메일)를 요구합니다 → secrets/sec_user_agent.txt"
+  },
+  "btc_treasury": {
+    "enabled": true,
+    "_note": "BTC 트레저리 mNAV 추적기(btc_nav.py). 텔레그램은 위 telegram 블록의 뉴스봇 토큰/chat_id 를 그대로 쓴다(telegram.enabled 스위치와 무관).",
+    "sec_user_agent": "",
+    "_sec_ua_note": "SEC 는 User-Agent 에 연락처를 요구한다. 없으면 403.",
+    "poll_filings": 6,
+    "history_weeks": 26,
+    "alerts": {
+      "mnav_warn": 1.05,
+      "mnav_stop": 1.0,
+      "buy_slowdown_ratio": 0.2,
+      "stale_days": 10
+    },
+    "issuers": [
+      {
+        "ticker": "MSTR",
+        "cik": 1050446,
+        "name": "Strategy Inc",
+        "lead": true,
+        "shares_baseline": {
+          "shares": 384225751,
+          "as_of": "2026-07-24",
+          "source": "10-Q(2026-08-03 제출) 표지: Class A 364,585,501 + Class B 19,640,250",
+          "_note": "8-K 는 총 주식수를 싣지 않는다. 이 기준선 + 이후 주간 ATM 순발행 누적으로 추정한다. 분기마다 새 10-Q 표지 숫자로 갱신할 것."
+        },
+        "liabilities": {
+          "debt_usd": 7235609000,
+          "preferred_usd": 15462056000,
+          "as_of": "2026-06-30",
+          "source": "10-Q 2026 2분기 대차대조표: 총부채 $7,235,609천 / Series A Perpetual Preferred 청산우선 $15,462,056천",
+          "_note": "분기마다 수동 갱신. 비우면(null) 스펙의 단순 mNAV 만 계산한다."
+        }
+      },
+      {
+        "ticker": "ASST",
+        "cik": 1920406,
+        "name": "Strive, Inc.",
+        "lead": false,
+        "liabilities": {
+          "debt_usd": 28581000,
+          "preferred_usd": null,
+          "preferred_from": {
+            "field": "sata_shares",
+            "per_share": 100
+          },
+          "as_of": "2026-06-30",
+          "source": "10-Q 2026 2분기: 총부채 $28,581천. SATA 청산우선 $100/주 → 주간 8-K 의 SATA 주식수로 매주 자동 갱신"
+        }
+      }
+    ]
+  }
+}

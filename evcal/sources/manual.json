@@ -1,0 +1,179 @@
+[
+ {
+  "name": "Apple 'Surprise and Shine' 이벤트 (iPhone 18 Pro/Ultra, 터너스 CEO 첫 런칭)",
+  "date": "2026-09-09",
+  "time": "10:00",
+  "tz": "America/Los_Angeles",
+  "tickers": [
+   "AAPL",
+   "005930"
+  ],
+  "category": "corp",
+  "uncertainty": 0.8,
+  "impact": "애플·스마트폰 부품·삼성 경쟁",
+  "url": "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/"
+ },
+ {
+  "name": "오라클(ORCL) FY27 1분기 실적 (장후)",
+  "date": "2026-09-10",
+  "time": "16:05",
+  "tz": "America/New_York",
+  "tickers": [
+   "ORCL"
+  ],
+  "category": "earnings",
+  "uncertainty": 0.7,
+  "impact": "AI 클라우드 캐펙스·RPO 읽기",
+  "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx"
+ },
+ {
+  "name": "어도비(ADBE) FY26 3분기 실적 (장후)",
+  "date": "2026-09-10",
+  "time": "16:05",
+  "tz": "America/New_York",
+  "tickers": [
+   "ADBE"
+  ],
+  "category": "earnings",
+  "uncertainty": 0.6,
+  "impact": "소프트웨어·AI 수익화",
+  "url": "https://www.businesswire.com/news/home/20260831054310/en/Adobe-to-Announce-Q3-FY2026-Earnings-Results-on-Sept.-10-2026"
+ },
+ {
+  "name": "테슬라 Semi 롤아웃 이벤트 (네바다 스파크스 신공장)",
+  "date": "2026-09-24",
+  "tz": "America/Los_Angeles",
+  "tickers": [
+   "TSLA"
+  ],
+  "category": "corp",
+  "uncertainty": 0.8,
+  "impact": "테슬라·EV 트럭",
+  "url": "https://www.notateslaapp.com/news/4607/tesla-announces-tesla-semi-event-at-new-nevada-factory"
+ },
+ {
+  "name": "마이크론(MU) FY26 4분기 실적 (콜 14:30 MT)",
+  "date": "2026-09-30",
+  "time": "14:30",
+  "tz": "America/Denver",
+  "tickers": [
+   "MU",
+   "SKHY",
+   "005930",
+   "000660"
+  ],
+  "category": "earnings",
+  "uncertainty": 0.7,
+  "impact": "메모리 업황·SK하이닉스/삼성 직결",
+  "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx"
+ },
+ {
+  "name": "모건스탠리 글로벌 헬스케어 컨퍼런스 (9/14~16, NY) — 릴리 경영진 코멘트",
+  "date": "2026-09-14",
+  "tz": "America/New_York",
+  "tickers": [
+   "LLY"
+  ],
+  "category": "conf",
+  "uncertainty": 0.6,
+  "impact": "GLP-1 경쟁·오르포글리프론·섹터 심리(즉석 발언 리스크)",
+  "confirmed": false
+ },
+ {
+  "name": "HC웨인라이트 글로벌 투자 컨퍼런스 (9/14~16)",
+  "date": "2026-09-14",
+  "tz": "America/New_York",
+  "tickers": [],
+  "category": "conf",
+  "uncertainty": 0.4,
+  "impact": "소형 바이오",
+  "confirmed": false
+ },
+ {
+  "name": "트루이스트 테크 컨퍼런스 (AI 전환·엔터프라이즈)",
+  "date": "2026-09-15",
+  "tz": "America/New_York",
+  "tickers": [],
+  "category": "conf",
+  "uncertainty": 0.5,
+  "impact": "소프트웨어 경영진 코멘트",
+  "confirmed": false
+ },
+ {
+  "name": "스티펠 면역학 포럼 (9/15~16)",
+  "date": "2026-09-15",
+  "tz": "America/New_York",
+  "tickers": [],
+  "category": "conf",
+  "uncertainty": 0.4,
+  "impact": "바이오",
+  "confirmed": false
+ },
+ {
+  "name": "웰스파고 텍사스 전력·가스 투어 (9/16~17)",
+  "date": "2026-09-16",
+  "tz": "America/Chicago",
+  "tickers": [],
+  "category": "conf",
+  "uncertainty": 0.4,
+  "impact": "전력·에너지",
+  "confirmed": false
+ },
+ {
+  "name": "올인 서밋 LA (9/13~15)",
+  "date": "2026-09-13",
+  "tz": "America/Los_Angeles",
+  "tickers": [],
+  "category": "conf",
+  "uncertainty": 0.3,
+  "impact": "매크로·테크 담론",
+  "confirmed": false
+ },
+ {
+  "name": "대한항공 채권자 이의기간 종료 — 외인 매수 지속 여부",
+  "date": "2026-09-14",
+  "tz": "Asia/Seoul",
+  "tickers": [
+   "003490"
+  ],
+  "category": "corp",
+  "uncertainty": 0.6,
+  "impact": "대한항공 수급",
+  "confirmed": false
+ },
+ {
+  "name": "실리콘투 RCPS 3,000억 납입일 — 납입완료 공시 확인",
+  "date": "2026-09-15",
+  "tz": "Asia/Seoul",
+  "tickers": [
+   "257720"
+  ],
+  "category": "corp",
+  "uncertainty": 0.8,
+  "impact": "시나리오 A/B/C 판정·9.23% 신규 대주주",
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000126",
+  "confirmed": true
+ },
+ {
+  "name": "SK하이닉스 노조 수정 임금안 재투표 (9/15~16) — 부결 시 파업 리스크",
+  "date": "2026-09-15",
+  "tz": "Asia/Seoul",
+  "tickers": [
+   "000660"
+  ],
+  "category": "corp",
+  "uncertainty": 0.7,
+  "impact": "SK하이닉스·메모리 공급",
+  "confirmed": true
+ },
+ {
+  "name": "KRX 리밸런싱 D+5 — 되돌림 구간 첫 측정",
+  "date": "2026-09-17",
+  "tz": "Asia/Seoul",
+  "tickers": [],
+  "category": "corp",
+  "uncertainty": 0.4,
+  "impact": "국내 수급 되돌림",
+  "confirmed": false
+ }
+]
